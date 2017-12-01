@@ -24,7 +24,7 @@
 
 #ifndef Motor_h
 #define Motor_h
-#include <Arduino.h>
+#include <Arduino.h> // must include Arduino library to use arduino command (syntax) 
 class Motor
 {
 public:
