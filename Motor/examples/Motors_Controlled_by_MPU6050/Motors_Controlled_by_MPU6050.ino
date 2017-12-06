@@ -1,8 +1,7 @@
 #include "I2Cdev.h"
 #include "MPU6050_6Axis_MotionApps20.h"
 #include <Motor.h>
-/*#include <Servo.h>
-Servo myservo; */ 
+
 Motor Alpha(8,12,9) ;  // (pin1,pin2,pinP)
 Motor Beta(7,4,10);  //(pin1,pin2,pinP) 
 
@@ -62,7 +61,6 @@ void setup() {
     Alpha.begin();
     Beta.begin(); 
 
- //myservo.attach(11); 
     // initialize serial communication
     // (115200 chosen because it is required for Teapot Demo output, but it's
     // really up to you depending on your project)
@@ -190,14 +188,14 @@ void loop() {
 
 int pos = map(ypr[1] * 180/M_PI,-90,90,0,255); 
 if (ypr[1] * 180/M_PI>5) {
-  /* *Marche Arrière */
+  /*Rearward direction */
 Alpha.rearward(50);  
 Beta.rearward(50); 
 Serial.print("\t"), Serial.print("Marche arriere "); 
 }
 else if (ypr[1] * 180/M_PI <-9) 
 {
-  /* Marche Avant */
+  /* Forward Direction*/
 int pos2=map(pos,0,-90,0,255);
   Alpha.forward(50); 
   Beta.forward(50); 
@@ -206,14 +204,14 @@ int pos2=map(pos,0,-90,0,255);
 else { Alpha.turnOff(), Beta.turnOff(); } 
 
 if (ypr[2] * 180/M_PI <-10) 
-/*Tourner à gauche*/
+/*Turn left */
 {
   Alpha.forward(50); 
   Beta.turnOff(); 
    Serial.print("\t"), Serial.print("a Gauche " );
 }
 else if (ypr[2] * 180/M_PI > 10) 
-/*Tourner à droite */
+/*Turn right*/
 {
   Beta.forward(50); 
   Alpha.turnOff(); 

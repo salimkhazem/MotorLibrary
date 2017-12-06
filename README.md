@@ -20,17 +20,17 @@ I used an example with the inertial unit MPU6050, I put it in the folder ../Moto
 
 Operation:
 
-* To include the library you have to include the Motor library and this is done with this formula #include <Motor.h>
+* To include the library you have to include the Motor library and this is done with this formula ( #include <Motor.h> )
 
 * To create an instance: Motor object (pin1, pin2, pinPWM);
 
 * For the assignment it is necessary to introduce: object.begin ();
 
-* To run the engine in the forward direction: object.forward (speed_with_percentage);
+* To run the motor in the forward direction: object.forward (speed_with_percentage);
 
-* To run the engine in the reverse direction: object.rearward (speed_with_percentage);
+* To run the motor in the reverse direction: object.rearward (speed_with_percentage);
 
-* To stop the engine: object.turnOff ();
+* To stop the motor: object.turnOff ();
 
 
 Contribution:
