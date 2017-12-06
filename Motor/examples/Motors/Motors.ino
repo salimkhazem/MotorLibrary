@@ -20,10 +20,10 @@ void loop() {
   }
   for (int i=0;i<=100; i +=10)
   {
+
     motor1.rearward(i); //drive the motor 1 to the rearward direction
     motor2.rearward(i); //drive the motor 2 to the rearward direction
-    delay(1000);
-
+    delay(1000); 
   }
 
 }
