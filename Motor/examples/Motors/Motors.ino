@@ -23,7 +23,7 @@ void loop() {
     motor1.rearward(i); //drive the motor 1 to the rearward direction
     motor2.rearward(i); //drive the motor 2 to the rearward direction
     delay(1000);
-    
+
   }
 
 }
