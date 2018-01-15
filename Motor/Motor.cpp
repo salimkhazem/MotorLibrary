@@ -59,5 +59,6 @@ void Motor::turnOff()
 {
   digitalWrite(m_pin1,LOW);
   digitalWrite(m_pin2,LOW);
+  analogWrite(m_pinP,0); 
 
 }
