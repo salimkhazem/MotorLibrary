@@ -1,12 +1,12 @@
 # MotorLibrary
 
 
-* Library to control a Motor with L293D
+* Library to control a Motor with L293D or L298 
 * Developed by Salim Khazem
 
 
 
-It is a library that allows you to control an Motor using an L293D
+It is a library that allows you to control an Motor using an L293D or L298 
 
 You must add the libraries to the Arduino libraries folder. 
 
