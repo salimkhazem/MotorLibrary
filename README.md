@@ -6,7 +6,7 @@
 
 
 
-It is a library that allows you to control an Motor using an L293D or L298 
+It is a library that allows you to control an Motor using an L293D or L298N
 
 You must add the libraries to the Arduino libraries folder. 
 
