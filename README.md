@@ -8,13 +8,12 @@
 
 It is a library that allows you to control an Motor using an L293D or L298N
 
-You must add the libraries to the Arduino libraries folder. 
-
-To do this : you must copy the folder "Motor" paste them in the arduino libraries folder.
 
 
-
-I used an example with the inertial unit MPU6050, I put it in the folder ../Motor/examples
+Installation:
+1. Download the library: https://github.com/salimkhazem/MotorLibrary/archive/master.zip
+2. (In the Arduino IDE) Sketch > Include Library > Add .ZIP Library > select the downloaded file > Open
+3. You will find examples under File > Examples > MotorLibrary
 
 
 
